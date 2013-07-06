@@ -2,7 +2,7 @@
 
 @class Requester;
 
-@interface RootViewController : UIViewController
+@interface CharacterSheetViewController : UIViewController
 
 - (id)initWithRequester:(Requester *)requester;
 

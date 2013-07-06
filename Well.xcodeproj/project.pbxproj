@@ -16,8 +16,10 @@
 		5C41E21617888469000CAA12 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 5C41E21517888469000CAA12 /* Default.png */; };
 		5C41E21817888469000CAA12 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5C41E21717888469000CAA12 /* Default@2x.png */; };
 		5C41E21A17888469000CAA12 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5C41E21917888469000CAA12 /* Default-568h@2x.png */; };
-		5CBE694317888B3400883A09 /* Well-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 5C41E20B17888469000CAA12 /* Well-Info.plist */; };
 		5CBE69581788B4F000883A09 /* RootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5CBE69571788B4F000883A09 /* RootViewController.m */; };
+		5CBE695B1788BB7000883A09 /* CharacterSheetViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5CBE695A1788BB7000883A09 /* CharacterSheetViewController.m */; };
+		5CBE695E1788BB7E00883A09 /* LeaderboardViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5CBE695D1788BB7E00883A09 /* LeaderboardViewController.m */; };
+		5CBE69611788BB8A00883A09 /* AchievementsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5CBE69601788BB8A00883A09 /* AchievementsViewController.m */; };
 		5CBE69641788BE1700883A09 /* Requester.m in Sources */ = {isa = PBXBuildFile; fileRef = 5CBE69631788BE1700883A09 /* Requester.m */; };
 		5CBE697A1788C22100883A09 /* AFHTTPClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 5CBE69681788C22100883A09 /* AFHTTPClient.m */; };
 		5CBE697B1788C22100883A09 /* AFHTTPRequestOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 5CBE696A1788C22100883A09 /* AFHTTPRequestOperation.m */; };
@@ -46,6 +48,12 @@
 		5C41E21917888469000CAA12 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		5CBE69561788B4F000883A09 /* RootViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RootViewController.h; path = Controllers/RootViewController.h; sourceTree = "<group>"; };
 		5CBE69571788B4F000883A09 /* RootViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RootViewController.m; path = Controllers/RootViewController.m; sourceTree = "<group>"; };
+		5CBE69591788BB7000883A09 /* CharacterSheetViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CharacterSheetViewController.h; sourceTree = "<group>"; };
+		5CBE695A1788BB7000883A09 /* CharacterSheetViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CharacterSheetViewController.m; sourceTree = "<group>"; };
+		5CBE695C1788BB7E00883A09 /* LeaderboardViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LeaderboardViewController.h; sourceTree = "<group>"; };
+		5CBE695D1788BB7E00883A09 /* LeaderboardViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LeaderboardViewController.m; sourceTree = "<group>"; };
+		5CBE695F1788BB8A00883A09 /* AchievementsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AchievementsViewController.h; sourceTree = "<group>"; };
+		5CBE69601788BB8A00883A09 /* AchievementsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AchievementsViewController.m; sourceTree = "<group>"; };
 		5CBE69621788BE1700883A09 /* Requester.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Requester.h; sourceTree = "<group>"; };
 		5CBE69631788BE1700883A09 /* Requester.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Requester.m; sourceTree = "<group>"; };
 		5CBE69671788C22100883A09 /* AFHTTPClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFHTTPClient.h; sourceTree = "<group>"; };
@@ -149,6 +157,12 @@
 		5CBE694B17888C2100883A09 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				5CBE695F1788BB8A00883A09 /* AchievementsViewController.h */,
+				5CBE69601788BB8A00883A09 /* AchievementsViewController.m */,
+				5CBE69591788BB7000883A09 /* CharacterSheetViewController.h */,
+				5CBE695A1788BB7000883A09 /* CharacterSheetViewController.m */,
+				5CBE695C1788BB7E00883A09 /* LeaderboardViewController.h */,
+				5CBE695D1788BB7E00883A09 /* LeaderboardViewController.m */,
 				5CBE69561788B4F000883A09 /* RootViewController.h */,
 				5CBE69571788B4F000883A09 /* RootViewController.m */,
 			);
@@ -236,7 +250,6 @@
 				5C41E21617888469000CAA12 /* Default.png in Resources */,
 				5C41E21817888469000CAA12 /* Default@2x.png in Resources */,
 				5C41E21A17888469000CAA12 /* Default-568h@2x.png in Resources */,
-				5CBE694317888B3400883A09 /* Well-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -250,6 +263,9 @@
 				5C41E21017888469000CAA12 /* main.m in Sources */,
 				5C41E21417888469000CAA12 /* AppDelegate.m in Sources */,
 				5CBE69581788B4F000883A09 /* RootViewController.m in Sources */,
+				5CBE695B1788BB7000883A09 /* CharacterSheetViewController.m in Sources */,
+				5CBE695E1788BB7E00883A09 /* LeaderboardViewController.m in Sources */,
+				5CBE69611788BB8A00883A09 /* AchievementsViewController.m in Sources */,
 				5CBE69641788BE1700883A09 /* Requester.m in Sources */,
 				5CBE697A1788C22100883A09 /* AFHTTPClient.m in Sources */,
 				5CBE697B1788C22100883A09 /* AFHTTPRequestOperation.m in Sources */,
@@ -323,6 +339,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PREPROCESSOR_DEFINITIONS = "";
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;

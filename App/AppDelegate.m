@@ -1,5 +1,7 @@
 #import "AppDelegate.h"
 #import "RootViewController.h"
+#import "AFHTTPClient.h"
+#import "Requester.h"
 
 @implementation AppDelegate
 
@@ -8,9 +10,18 @@
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     self.window.backgroundColor = [UIColor whiteColor];
 
-    RootViewController *rootViewController = [[RootViewController alloc] init];
-    self.window.rootViewController = rootViewController;
+    NSURL *baseURL;
+#ifdef DEBUG
+    baseURL = [NSURL URLWithString:@"http://localhost:3000/api"];
+#else
+    baseURL = [NSURL URLWithString:@"http://human-well.herokuapp.com/api"];
+#endif
 
+    AFHTTPClient *httpClient = [[AFHTTPClient alloc] initWithBaseURL:baseURL];
+    Requester *requester = [[Requester alloc] initWithHTTPClient:httpClient];
+
+    RootViewController *rootViewController = [[RootViewController alloc] initWithRequester:requester];
+    self.window.rootViewController = rootViewController;
     [self.window makeKeyAndVisible];
     return YES;
 }
