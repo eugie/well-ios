@@ -1,0 +1,13 @@
+DerivedData/
+App/DerivedData/
+
+.DS_Store
+*.swp
+
+build/
+
+*.mode1v3
+*.mode2v3
+
+*/project.xcworkspace/
+xcuserdata/
