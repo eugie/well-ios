@@ -12,9 +12,9 @@
 
     NSURL *baseURL;
 #ifdef DEBUG
-    baseURL = [NSURL URLWithString:@"http://localhost:3000/api"];
+    baseURL = [NSURL URLWithString:@"http://localhost:3000/"];
 #else
-    baseURL = [NSURL URLWithString:@"http://human-well.herokuapp.com/api"];
+    baseURL = [NSURL URLWithString:@"http://human-well.herokuapp.com/"];
 #endif
 
     AFHTTPClient *httpClient = [[AFHTTPClient alloc] initWithBaseURL:baseURL];
