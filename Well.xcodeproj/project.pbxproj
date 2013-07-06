@@ -16,6 +16,7 @@
 		5C41E21617888469000CAA12 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 5C41E21517888469000CAA12 /* Default.png */; };
 		5C41E21817888469000CAA12 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5C41E21717888469000CAA12 /* Default@2x.png */; };
 		5C41E21A17888469000CAA12 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5C41E21917888469000CAA12 /* Default-568h@2x.png */; };
+		5CBE6942178888A900883A09 /* AFNetworking in Resources */ = {isa = PBXBuildFile; fileRef = 5CBE6941178888A900883A09 /* AFNetworking */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +33,7 @@
 		5C41E21517888469000CAA12 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
 		5C41E21717888469000CAA12 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
 		5C41E21917888469000CAA12 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		5CBE6941178888A900883A09 /* AFNetworking */ = {isa = PBXFileReference; lastKnownFileType = folder; path = AFNetworking; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,6 +82,7 @@
 			children = (
 				5C41E21217888469000CAA12 /* AppDelegate.h */,
 				5C41E21317888469000CAA12 /* AppDelegate.m */,
+				5CBE69401788887300883A09 /* Domain */,
 				5C41E20A17888469000CAA12 /* Supporting Files */,
 			);
 			path = App;
@@ -97,6 +100,14 @@
 				5C41E21917888469000CAA12 /* Default-568h@2x.png */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		5CBE69401788887300883A09 /* Domain */ = {
+			isa = PBXGroup;
+			children = (
+				5CBE6941178888A900883A09 /* AFNetworking */,
+			);
+			path = Domain;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -154,6 +165,7 @@
 				5C41E21617888469000CAA12 /* Default.png in Resources */,
 				5C41E21817888469000CAA12 /* Default@2x.png in Resources */,
 				5C41E21A17888469000CAA12 /* Default-568h@2x.png in Resources */,
+				5CBE6942178888A900883A09 /* AFNetworking in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
