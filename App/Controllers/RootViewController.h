@@ -1,9 +1,9 @@
 #import <UIKit/UIKit.h>
 
-@class Requester;
+@class Requester, AFHTTPClient;
 
 @interface RootViewController : UIViewController
 
-- (id)initWithRequester:(Requester *)requester;
+- (id)initWithRequester:(Requester *)requester httpClient:(AFHTTPClient *)httpClient;
 
 @end

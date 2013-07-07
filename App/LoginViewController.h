@@ -1,5 +1,9 @@
 #import <UIKit/UIKit.h>
 
-@interface LoginViewController : UIViewController
+@class AFHTTPClient;
+
+@interface LoginViewController : UIViewController <UIWebViewDelegate>
+
+- (id)initWithHTTPClient:(AFHTTPClient *)httpClient;
 
 @end

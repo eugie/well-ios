@@ -31,7 +31,6 @@
 		5CBE69811788C22100883A09 /* AFXMLRequestOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 5CBE69771788C22100883A09 /* AFXMLRequestOperation.m */; };
 		5CBE69821788C22100883A09 /* UIImageView+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = 5CBE69791788C22100883A09 /* UIImageView+AFNetworking.m */; };
 		5CBE69861788F4E800883A09 /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5CBE69841788F4E800883A09 /* LoginViewController.m */; };
-		5CBE69871788F4E800883A09 /* LoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5CBE69851788F4E800883A09 /* LoginViewController.xib */; };
 		5CBE698C1788F78800883A09 /* CharacterSheetViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5CBE698B1788F78800883A09 /* CharacterSheetViewController.xib */; };
 		5CBE69971789052D00883A09 /* achievements-tab-icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 5CBE69911789052D00883A09 /* achievements-tab-icon.png */; };
 		5CBE69981789052D00883A09 /* achievements-tab-icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5CBE69921789052D00883A09 /* achievements-tab-icon@2x.png */; };
@@ -88,7 +87,6 @@
 		5CBE69791788C22100883A09 /* UIImageView+AFNetworking.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImageView+AFNetworking.m"; sourceTree = "<group>"; };
 		5CBE69831788F4E800883A09 /* LoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
 		5CBE69841788F4E800883A09 /* LoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
-		5CBE69851788F4E800883A09 /* LoginViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LoginViewController.xib; sourceTree = "<group>"; };
 		5CBE698B1788F78800883A09 /* CharacterSheetViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CharacterSheetViewController.xib; sourceTree = "<group>"; };
 		5CBE69911789052D00883A09 /* achievements-tab-icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "achievements-tab-icon.png"; sourceTree = "<group>"; };
 		5CBE69921789052D00883A09 /* achievements-tab-icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "achievements-tab-icon@2x.png"; sourceTree = "<group>"; };
@@ -192,7 +190,6 @@
 				5CBE69571788B4F000883A09 /* RootViewController.m */,
 				5CBE69831788F4E800883A09 /* LoginViewController.h */,
 				5CBE69841788F4E800883A09 /* LoginViewController.m */,
-				5CBE69851788F4E800883A09 /* LoginViewController.xib */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -293,7 +290,6 @@
 				5C41E21617888469000CAA12 /* Default.png in Resources */,
 				5C41E21817888469000CAA12 /* Default@2x.png in Resources */,
 				5C41E21A17888469000CAA12 /* Default-568h@2x.png in Resources */,
-				5CBE69871788F4E800883A09 /* LoginViewController.xib in Resources */,
 				5CBE698C1788F78800883A09 /* CharacterSheetViewController.xib in Resources */,
 				5CBE69971789052D00883A09 /* achievements-tab-icon.png in Resources */,
 				5CBE69981789052D00883A09 /* achievements-tab-icon@2x.png in Resources */,

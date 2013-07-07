@@ -20,7 +20,7 @@
     AFHTTPClient *httpClient = [[AFHTTPClient alloc] initWithBaseURL:baseURL];
     Requester *requester = [[Requester alloc] initWithHTTPClient:httpClient];
 
-    RootViewController *rootViewController = [[RootViewController alloc] initWithRequester:requester];
+    RootViewController *rootViewController = [[RootViewController alloc] initWithRequester:requester httpClient:httpClient];
     self.window.rootViewController = rootViewController;
     [self.window makeKeyAndVisible];
     return YES;

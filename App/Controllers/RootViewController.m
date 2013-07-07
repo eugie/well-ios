@@ -4,6 +4,7 @@
 #import "CharacterSheetViewController.h"
 #import "Requester.h"
 #import "LoginViewController.h"
+#import "AFHTTPClient.h"
 
 @interface RootViewController ()
 
@@ -12,17 +13,19 @@
 @property (strong, nonatomic) UINavigationController *achievementsViewController;
 @property (strong, nonatomic) UINavigationController *leaderboardViewController;
 @property (strong, nonatomic) Requester *requester;
+@property (strong, nonatomic) AFHTTPClient *httpClient;
 @property (assign, nonatomic) BOOL loginPresented;
 
 @end
 
 @implementation RootViewController
 
-- (id)initWithRequester:(Requester *)requester {
+- (id)initWithRequester:(Requester *)requester httpClient:(AFHTTPClient *)httpClient {
     self = [super init];
     if (self) {
         self.tabBarController = [[UITabBarController alloc] init];
         self.requester = requester;
+        self.httpClient = httpClient;
     }
     return self;
 }
@@ -46,7 +49,7 @@
     [super viewDidAppear:animated];
 
     if (!self.loginPresented) {
-        LoginViewController *loginViewController = [[LoginViewController alloc] init];
+        LoginViewController *loginViewController = [[LoginViewController alloc] initWithHTTPClient:self.httpClient];
         [self presentViewController:loginViewController animated:NO completion:^{
             self.loginPresented = YES;
         }];
