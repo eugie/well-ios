@@ -35,11 +35,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
 
-    self.view.frame = [[UIScreen mainScreen] bounds];
-    [self.view addSubview:self.tabBarController.view];
-
-    [self buildViewControllers];
-    
+    [self buildViewControllers];    
     self.tabBarController.viewControllers = @[self.characterSheetViewController,
                                               self.achievementsViewController,
                                               self.leaderboardViewController];
@@ -48,11 +44,16 @@
 - (void)viewDidAppear:(BOOL)animated {
     [super viewDidAppear:animated];
 
+    self.view.frame = [[UIScreen mainScreen] bounds];
+
     if (!self.loginPresented) {
         LoginViewController *loginViewController = [[LoginViewController alloc] initWithHTTPClient:self.httpClient];
         [self presentViewController:loginViewController animated:NO completion:^{
             self.loginPresented = YES;
         }];
+    } else {
+        self.tabBarController.view.frame = self.view.frame;
+        [self.view addSubview:self.tabBarController.view];
     }
 }
 

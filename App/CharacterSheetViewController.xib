@@ -201,7 +201,6 @@
 										<string key="NSFrameSize">{302, 20}</string>
 										<reference key="NSSuperview" ref="546608276"/>
 										<reference key="NSWindow"/>
-										<reference key="NSNextKeyView"/>
 										<string key="NSReuseIdentifierKey">_NS:9</string>
 										<bool key="IBUIOpaque">NO</bool>
 										<bool key="IBUIClipsSubviews">YES</bool>
