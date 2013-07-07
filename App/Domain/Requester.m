@@ -20,7 +20,7 @@
 
 - (void)getPath:(NSString *)path
          params:(NSDictionary *)params
-    withSuccess:(SuccessBlock)success
+        success:(SuccessBlock)success
         failure:(FailureBlock)failure {
     NSURLRequest *request = [self.httpClient requestWithMethod:@"get" path:path parameters:params];
     AFJSONRequestOperation *operation =

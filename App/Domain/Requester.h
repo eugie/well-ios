@@ -11,7 +11,7 @@ typedef void(^FailureBlock)(NSError *error);
 
 - (void)getPath:(NSString *)path
          params:(NSDictionary *)params
-    withSuccess:(SuccessBlock)success
+        success:(SuccessBlock)success
         failure:(FailureBlock)failure;
 
 @end
