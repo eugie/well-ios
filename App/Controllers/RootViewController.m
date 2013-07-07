@@ -3,14 +3,16 @@
 #import "LeaderboardViewController.h"
 #import "CharacterSheetViewController.h"
 #import "Requester.h"
+#import "LoginViewController.h"
 
 @interface RootViewController ()
 
 @property (strong, nonatomic) UITabBarController *tabBarController;
-@property (strong, nonatomic) CharacterSheetViewController *characterSheetViewController;
-@property (strong, nonatomic) AchievementsViewController *achievementsViewController;
-@property (strong, nonatomic) LeaderboardViewController *leaderboardViewController;
+@property (strong, nonatomic) UINavigationController *characterSheetViewController;
+@property (strong, nonatomic) UINavigationController *achievementsViewController;
+@property (strong, nonatomic) UINavigationController *leaderboardViewController;
 @property (strong, nonatomic) Requester *requester;
+@property (assign, nonatomic) BOOL loginPresented;
 
 @end
 
@@ -40,17 +42,31 @@
                                               self.leaderboardViewController];
 }
 
+- (void)viewDidAppear:(BOOL)animated {
+    [super viewDidAppear:animated];
+
+    if (!self.loginPresented) {
+        LoginViewController *loginViewController = [[LoginViewController alloc] init];
+        [self presentViewController:loginViewController animated:NO completion:^{
+            self.loginPresented = YES;
+        }];
+    }
+}
+
 #pragma mark - Private
 
 - (void)buildViewControllers {
-    self.characterSheetViewController = [[CharacterSheetViewController alloc] initWithRequester:self.requester];
-    self.characterSheetViewController.title = @"Character Sheet";
+    CharacterSheetViewController *csvc = [[CharacterSheetViewController alloc] initWithRequester:self.requester];
+    self.characterSheetViewController = [[UINavigationController alloc] initWithRootViewController:csvc];
+    self.characterSheetViewController.tabBarItem = [[UITabBarItem alloc] initWithTitle:@"Character Sheet" image:[UIImage imageNamed:@"character-tab-icon"] tag:0];
 
-    self.achievementsViewController = [[AchievementsViewController alloc] initWithRequester:self.requester];
-    self.achievementsViewController.title = @"Achievements";
+    AchievementsViewController *avc = [[AchievementsViewController alloc] initWithRequester:self.requester];
+    self.achievementsViewController = [[UINavigationController alloc] initWithRootViewController:avc];
+    self.achievementsViewController.tabBarItem = [[UITabBarItem alloc] initWithTitle:@"Achievements" image:[UIImage imageNamed:@"achievements-tab-icon"] tag:1];
 
-    self.leaderboardViewController = [[LeaderboardViewController alloc] initWithRequester:self.requester];
-    self.leaderboardViewController.title = @"Leaderboard";
+    LeaderboardViewController *lvc = [[LeaderboardViewController alloc] initWithRequester:self.requester];
+    self.leaderboardViewController = [[UINavigationController alloc] initWithRootViewController:lvc];
+    self.leaderboardViewController.tabBarItem = [[UITabBarItem alloc] initWithTitle:@"Leaderboard" image:[UIImage imageNamed:@"leaderboard-tab-icon"] tag:0];
 }
 
 @end

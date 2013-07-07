@@ -2,7 +2,7 @@
 
 @class Requester;
 
-@interface AchievementsViewController : UIViewController
+@interface AchievementsViewController : UIViewController <UITableViewDataSource, UITableViewDelegate>
 
 - (id)initWithRequester:(Requester *)requester;
 

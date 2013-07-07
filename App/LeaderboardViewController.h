@@ -2,7 +2,7 @@
 
 @class Requester;
 
-@interface LeaderboardViewController : UIViewController
+@interface LeaderboardViewController : UIViewController <UITableViewDataSource, UITableViewDelegate>
 
 - (id)initWithRequester:(Requester *)requester;
 

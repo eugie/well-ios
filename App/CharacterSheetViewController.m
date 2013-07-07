@@ -10,7 +10,7 @@
 @implementation CharacterSheetViewController
 
 - (id)initWithRequester:(Requester *)requester {
-    self = [super init];
+    self = [super initWithNibName:nil bundle:nil];
     if (self) {
         self.requester = requester;
     }
@@ -20,6 +20,8 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+
+    self.title = @"Character Sheet";
 }
 
 @end
