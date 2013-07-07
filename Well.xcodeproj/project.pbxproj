@@ -40,6 +40,11 @@
 		5CBE699C1789052D00883A09 /* leaderboard-tab-icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5CBE69961789052D00883A09 /* leaderboard-tab-icon@2x.png */; };
 		5CBE699F1789067B00883A09 /* knight-avatar.png in Resources */ = {isa = PBXBuildFile; fileRef = 5CBE699D1789067B00883A09 /* knight-avatar.png */; };
 		5CBE69A01789067B00883A09 /* knight-avatar@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5CBE699E1789067B00883A09 /* knight-avatar@2x.png */; };
+		5CBE69A317891A7F00883A09 /* login-title.png in Resources */ = {isa = PBXBuildFile; fileRef = 5CBE69A117891A7F00883A09 /* login-title.png */; };
+		5CBE69A417891A7F00883A09 /* login-title@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5CBE69A217891A7F00883A09 /* login-title@2x.png */; };
+		5CBE69A617891AA500883A09 /* LoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5CBE69A517891AA400883A09 /* LoginViewController.xib */; };
+		5CBE69A917891C7200883A09 /* fuzzy-background.png in Resources */ = {isa = PBXBuildFile; fileRef = 5CBE69A717891C7200883A09 /* fuzzy-background.png */; };
+		5CBE69AA17891C7200883A09 /* fuzzy-background@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5CBE69A817891C7200883A09 /* fuzzy-background@2x.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -96,6 +101,11 @@
 		5CBE69961789052D00883A09 /* leaderboard-tab-icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "leaderboard-tab-icon@2x.png"; sourceTree = "<group>"; };
 		5CBE699D1789067B00883A09 /* knight-avatar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "knight-avatar.png"; sourceTree = "<group>"; };
 		5CBE699E1789067B00883A09 /* knight-avatar@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "knight-avatar@2x.png"; sourceTree = "<group>"; };
+		5CBE69A117891A7F00883A09 /* login-title.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "login-title.png"; sourceTree = "<group>"; };
+		5CBE69A217891A7F00883A09 /* login-title@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "login-title@2x.png"; sourceTree = "<group>"; };
+		5CBE69A517891AA400883A09 /* LoginViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LoginViewController.xib; sourceTree = SOURCE_ROOT; };
+		5CBE69A717891C7200883A09 /* fuzzy-background.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "fuzzy-background.png"; sourceTree = "<group>"; };
+		5CBE69A817891C7200883A09 /* fuzzy-background@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "fuzzy-background@2x.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -190,6 +200,7 @@
 				5CBE69571788B4F000883A09 /* RootViewController.m */,
 				5CBE69831788F4E800883A09 /* LoginViewController.h */,
 				5CBE69841788F4E800883A09 /* LoginViewController.m */,
+				5CBE69A517891AA400883A09 /* LoginViewController.xib */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -223,14 +234,18 @@
 		5CBE69881788F75C00883A09 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				5CBE699D1789067B00883A09 /* knight-avatar.png */,
-				5CBE699E1789067B00883A09 /* knight-avatar@2x.png */,
 				5CBE69911789052D00883A09 /* achievements-tab-icon.png */,
 				5CBE69921789052D00883A09 /* achievements-tab-icon@2x.png */,
 				5CBE69931789052D00883A09 /* character-tab-icon.png */,
 				5CBE69941789052D00883A09 /* character-tab-icon@2x.png */,
+				5CBE69A717891C7200883A09 /* fuzzy-background.png */,
+				5CBE69A817891C7200883A09 /* fuzzy-background@2x.png */,
+				5CBE699D1789067B00883A09 /* knight-avatar.png */,
+				5CBE699E1789067B00883A09 /* knight-avatar@2x.png */,
 				5CBE69951789052D00883A09 /* leaderboard-tab-icon.png */,
 				5CBE69961789052D00883A09 /* leaderboard-tab-icon@2x.png */,
+				5CBE69A117891A7F00883A09 /* login-title.png */,
+				5CBE69A217891A7F00883A09 /* login-title@2x.png */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -299,6 +314,11 @@
 				5CBE699C1789052D00883A09 /* leaderboard-tab-icon@2x.png in Resources */,
 				5CBE699F1789067B00883A09 /* knight-avatar.png in Resources */,
 				5CBE69A01789067B00883A09 /* knight-avatar@2x.png in Resources */,
+				5CBE69A317891A7F00883A09 /* login-title.png in Resources */,
+				5CBE69A417891A7F00883A09 /* login-title@2x.png in Resources */,
+				5CBE69A617891AA500883A09 /* LoginViewController.xib in Resources */,
+				5CBE69A917891C7200883A09 /* fuzzy-background.png in Resources */,
+				5CBE69AA17891C7200883A09 /* fuzzy-background@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

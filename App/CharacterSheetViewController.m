@@ -10,7 +10,7 @@
 @implementation CharacterSheetViewController
 
 - (id)initWithRequester:(Requester *)requester {
-    self = [super initWithNibName:nil bundle:nil];
+    self = [super init];
     if (self) {
         self.requester = requester;
     }
