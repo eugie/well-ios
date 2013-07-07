@@ -24,4 +24,10 @@
     self.title = @"Character Sheet";
 }
 
+- (void)viewWillLayoutSubviews {
+    [super viewWillLayoutSubviews];
+
+    self.scrollView.contentSize = CGSizeMake(self.view.bounds.size.width, CGRectGetMaxY(self.savvyView.frame) + 10);
+}
+
 @end

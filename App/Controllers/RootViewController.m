@@ -62,14 +62,23 @@
     CharacterSheetViewController *csvc = [[CharacterSheetViewController alloc] initWithRequester:self.requester];
     self.characterSheetViewController = [[UINavigationController alloc] initWithRootViewController:csvc];
     self.characterSheetViewController.tabBarItem = [[UITabBarItem alloc] initWithTitle:@"Character Sheet" image:[UIImage imageNamed:@"character-tab-icon"] tag:0];
+    [self configureNavigationController:self.characterSheetViewController];
 
     AchievementsViewController *avc = [[AchievementsViewController alloc] initWithRequester:self.requester];
     self.achievementsViewController = [[UINavigationController alloc] initWithRootViewController:avc];
     self.achievementsViewController.tabBarItem = [[UITabBarItem alloc] initWithTitle:@"Achievements" image:[UIImage imageNamed:@"achievements-tab-icon"] tag:1];
+    [self configureNavigationController:self.achievementsViewController];
 
     LeaderboardViewController *lvc = [[LeaderboardViewController alloc] initWithRequester:self.requester];
     self.leaderboardViewController = [[UINavigationController alloc] initWithRootViewController:lvc];
-    self.leaderboardViewController.tabBarItem = [[UITabBarItem alloc] initWithTitle:@"Leaderboard" image:[UIImage imageNamed:@"leaderboard-tab-icon"] tag:0];
+    self.leaderboardViewController.tabBarItem = [[UITabBarItem alloc] initWithTitle:@"Leaderboard" image:[UIImage imageNamed:@"leaderboard-tab-icon"] tag:2];
+    [self configureNavigationController:self.leaderboardViewController];
+}
+
+- (void)configureNavigationController:(UINavigationController *)navigationController {
+    navigationController.navigationBar.tintColor = [UIColor colorWithRed:215/255.0 green:215/255.0 blue:215/255.0 alpha:1];
+    navigationController.navigationBar.titleTextAttributes = @{UITextAttributeTextColor: [UIColor colorWithRed:40/255.0 green:40/255.0 blue:40/255.0 alpha:1],
+                                                               UITextAttributeTextShadowColor: [UIColor whiteColor]};
 }
 
 @end
