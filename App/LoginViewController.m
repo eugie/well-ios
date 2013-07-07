@@ -44,11 +44,4 @@
     }
 }
 
-- (void)webViewDidFinishLoad:(UIWebView *)webView {
-    if (!self.loadedOnce) {
-        self.loadedOnce = YES;
-        [webView loadRequest:self.request];
-    }
-}
-
 @end
