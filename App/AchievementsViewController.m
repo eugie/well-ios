@@ -82,6 +82,7 @@
     cell.textLabel.text = achievement[@"title"];
     cell.detailTextLabel.text = achievement[@"description"];
     [((AchievementCell *)cell) setColor:[self colorForAchievement:achievement]];
+    [((AchievementCell *)cell) setAchievementImage:[achievement[@"image"] intValue]];
 }
 
 #pragma mark - Private

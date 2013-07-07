@@ -2,8 +2,7 @@
 
 @interface AchievementCell : UITableViewCell
 
-@property (strong, nonatomic) UIView *colorView;
-
 - (void)setColor:(UIColor *)color;
+- (void)setAchievementImage:(NSUInteger)imageNumber;
 
 @end
